@@ -1,0 +1,24 @@
+body{
+width: 	70%;
+max-width: 	700px;
+margin: 20px auto;
+border: 20px solid #bdc3c7;
+padding: 1.66%;
+font-family: 'Source Sans Pro';
+}
+
+.date {
+	color: 	#3498db;
+	text-transform: uppercase;
+	font-weight: 	bold;
+	letter-spacing: 2px;
+}
+
+.indent{
+ 	border-left: 5px solid #bdc3c7;
+ 	padding-left: 8px;
+}
+
+hr {
+	 border: 1px solid #bdc3c7;
+}
