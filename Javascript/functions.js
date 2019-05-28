@@ -6,7 +6,7 @@ function isEven(num) {
     }
 
 function isEven2 (num){
-    retuen num % 2 === 0;
+    return num % 2 === 0;
 }
 
 function factorial(foo) {
@@ -24,3 +24,5 @@ return fact;
 function kebabToSnake(str){
 return str.replace(/-/g, "_");
 }
+
+
