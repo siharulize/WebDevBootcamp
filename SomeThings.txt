@@ -1,5 +1,0 @@
-netstat -a -o -n   -  to list all the ports and PIDs
-
-taskkill //PID 2952 //F - to kill a port
-
-nodemon --exec npm start - to start nodemon, automatically listening to changes and restarting node
