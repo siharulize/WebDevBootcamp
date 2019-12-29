@@ -70,3 +70,4 @@ CREATE    /campgrounds/:id/comments        POST
 #Style show page
     - Add sidebar to show page
     - Dispay comments nicely
+
