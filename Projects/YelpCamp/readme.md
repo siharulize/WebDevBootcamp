@@ -70,4 +70,28 @@ CREATE    /campgrounds/:id/comments        POST
 #Style show page
     - Add sidebar to show page
     - Dispay comments nicely
+    - Add public Directory
+    - Add custom stylesheet
 
+#Authentication 
+    - Install all packages needed for auth
+    - Define User model
+    - Configure passport
+    - Add register routes
+    - Add register template
+    - Add login routes
+    - add login template
+    - add logout route
+
+#Navbar
+    - prevent user from adding a comment if not signed in
+    - add links to navbar
+    - show/hide auth links in navbar correctly
+
+#Refactoring
+    - refactoring routes
+    - use express router to reorganize all routes
+    - associate users + comments
+    - save author's name to a comment automatically
+    - Prevent an unauthenticated user from creating a campground
+    - save username+id to newly created campground
