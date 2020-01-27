@@ -2,13 +2,19 @@
 
 ====================================================
 
-INDEX     /campgrounds        GET     Display a list of all campgrounds
-NEW       /campgrounds/new    GET     Displays form to make a new campground
-CREATE    /campgrounds        POST    Add new campground to DB
-SHOW      /campgrounds/:id    GET     Shows info about one campground
+INDEX     /campgrounds              GET     Display a list of all campgrounds
+NEW       /campgrounds/new          GET     Displays form to make a new campground
+CREATE    /campgrounds              POST    Add new campground to DB
+SHOW      /campgrounds/:id          GET     displays one campground based on ID in the url
+EDIT      /campgrounds/:id/edit     GET     displays edit form based on ID in the url
+UPDATE    /campgrounds/:id          PUT     replaces an existing article based on ID in the url
+DELETE    /campgrounds/:id          DELETE  deletes campground from DB
 
-NEW       /campgrounds/:id/comments/new    GET
-CREATE    /campgrounds/:id/comments        POST
+NEW       /campgrounds/:id/comments/new                 GET
+CREATE    /campgrounds/:id/comments                     POST
+EDIT      /campgrounds/:id/comments/:comment_id/edit    EDIT
+UPDATE    /campgrounds/:id/comments/:comment_id         PUT
+DELETE    /campgrounds/:id/comments/:comment_id         DELETE 
 
 
 ====================================================
@@ -95,3 +101,35 @@ CREATE    /campgrounds/:id/comments        POST
     - save author's name to a comment automatically
     - Prevent an unauthenticated user from creating a campground
     - save username+id to newly created campground
+
+#Editing Campgrounds
+    - Add method-override
+    - add edit route for camogrounds
+    - add link to edit page
+    - add update route
+    - fix $set problem
+
+#Authorization campgrounds
+    - User can only edit his/her campgrounds
+    - User can only delete his/her campgrounds
+    - Hide/Show Edit and Delete buttons
+    - Add destroy route
+    - add delete button 
+
+#Authorization Comments
+    - add edit route for comments
+    - add edit button
+    - add update route
+    - add destroy route
+    - add delete button
+    - User can only edit his/her comments
+    - User can only delete his/her comments
+    - Hide/Show Edit and Delete buttons
+    - refactor middleware
+
+#Adding in Flash!
+    - demo working version
+    - Install and configure connect- flash
+    - add bootstrap alerts to header
+
+#adding background slider
